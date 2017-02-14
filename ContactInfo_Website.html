@@ -4,12 +4,11 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="websiteStyleSheet.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<head>	
-		
-		<title>Madison Snyder</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-default">
+<head>
+	<title>Madison Snyder</title>
+</head>
+<body>
+	<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<!--<div class="navbar-header">
 					<h1><center>Madison Snyder</center></h1>
@@ -20,16 +19,24 @@
 					<li><a href="#" onclick="click2()">Resume</a></li>
 					<li><a href="#" onclick="click3()">Contact Info</a></li>
 				</ul>
-			</div>
-				
+			</div>		
 		</nav>	
-		
+
 		<div class="header">
 			<h1 id="name"> <center>Madison Snyder </center></h1>
 		</div> 
-
-		<div class="pic">
-			<center><img id="pic" src="http://www.thedogtrainingsecret.com/images/guide-to-puppy-training.JPG"></center>
+		
+		<div>
+			<center>
+			<img id="pic" src="http://www.aux.tv/wp-content/uploads/2015/10/Drake-Hotline-Bling-meme.jpg">
+		</center>
+		</div>
+		<div class="lower">
+		<center>
+			<h3 id="enhance" class="light-blue">Contact Information </h3>
+			<p>Email: mlsnyder@usc.edu </p>
+			<p>Phone: (425) 614-8070 </p>
+		</center>
 		</div>
 
 		<div class = "buttons">
@@ -39,50 +46,24 @@
 				<a id="link" href="https://www.linkedin.com/in/madison-snyder-6b15ba9a" class="button"><img src="http://vectorlogofree.com/wp-content/uploads/2012/03/linkedin-icon-logo-vector.png" width="50" height="50"></a>
 			</center>
 		</div>
+
 		<script>
-			function click0() {
-				//HOME
-				
-				var arr = ["http://www.thedogtrainingsecret.com/images/guide-to-puppy-training.JPG", 
-				"http://data.whicdn.com/images/128484051/large.jpg",
-				"https://hackbrightacademy.com/content/uploads/2016/01/puppy-coding.jpg",
-				"http://www.thecanineperspective.com.au/wp-content/uploads/2013/08/puppy-on-computer.jpg"];
-
-				var rand = Math.floor(Math.random() * arr.length);
-				console.log(rand);
-
-				document.getElementById('pic').src = arr[rand];
-
-				/*
-				arr.push(document.getElementById('chairs'));
-				arr.push(document.getElementById('desks'));
-				arr.push(document.getElementById('meatballs'));
-
-				console.log(arr.length);
-
-				for(var i = 0; i < 3; i++) {
-					arr[i].style.border = "none";
-				}
-				*/
+		function click0() {
+			//HOME
+				window.location.href = "MadisonSnyderWebsite.html";
 			}
-			function click1() {
-				//INTERESTS
-				window.location.href = "Interests_Website.html";
-			}
-			function click2() {
-				//RESUME
-				//var elem = document.getElementById('desks');
-				//elem.style.border = "1px solid red";
-				window.location.href = "Resume_Website.html";
-			}
-			function click3() {
+		function click1() {
+			//INTERESTS
+			window.location.href = "Interests_Website.html";
+		}
+		function click2() {
+			//RESUME
+			window.location.href = "Resume_Website.html";
+		}
+		function click3() {
 			//CONTACT INFO
 			window.location.href = "ContactInfo_Website.html";
 		}
-
-			</script>
-	</body>
-	<!--
-	
--->
+	</script>
+</body>
 </html>
